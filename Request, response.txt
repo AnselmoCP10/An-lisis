@@ -1,0 +1,51 @@
+Dolar a Peso Mexicano.
+
+Request:
+http://www.banxico.org.mx/tipcamb/datosieajax?accion=dato&idSeries=SF43718&decimales=4&fecha=28/09/2018
+Response:
+{"header":{"exito":true},"body":[{"exito":true,"mensaje":"18.7231"}]}
+
+Obtuvimos este resultado como ejercicio ejercido en clase para el manejo y extracción de los datos de la página del Banco de México.
+
+Dolar a Dolar Canadiense.
+
+Request:
+https://www.bankofcanada.ca/rates/exchange/currency-converter/?lookupPage=lookup_currency_converter_2017.php&startRange=2008-09-28&rangeType=range&selectToFrom=to&convert=1.00&seriesFrom=Canadian+dollar&seriesTo[]=FXUSDCAD&rangeValue=1.y&dFrom=&dTo=&submit_button=Convert
+
+Request:
+https://www.xe.com/es/api/stats.php?fromCurrency=USD&toCurrency=CAD
+Response:
+low:    1.2841274901
+
+En este buscamos dos resultados y dos fuentes para la extracción de los datos, ya que la primera opción nos arrojaba un HTML y la segunda opción nos arroja un dato llamado “low” con el valor.
+
+
+
+Dolar a Euro.
+
+Request:
+https://www.xe.com/es/api/stats.php?fromCurrency=EUR&toCurrency=USD
+Response:
+low:  1.1559370647
+
+Resultado del valor en una variable llamada “low” de un archivo js.
+
+Dólar a Dominicano.
+
+Request:
+http://www.worldforexrates.com/js/currencies.js
+Response:
+Obtenemos una tabla con todos los tipo de cambio de la moneda actualmente.
+
+Dolar a Reales.
+
+Resquest:
+https://www.xe.com/es/api/stats.php?fromCurrency=USD&toCurrency=BRL
+Response:
+low:   4.0130797922
+
+Obtenemos un js con una variable llamada low con el valor de tipo de cambio.
+
+Dolar a Peso Colombiano.
+
+De este resultado obtuvimos un XML de la página del Banco de Colombia.
